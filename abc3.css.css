@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #07152f;
+    color: white;
+}
+
+/* Welcome Page */
+
+.hero {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #07152f,
+        #123d86,
+        #7e183b
+    );
+
+    padding: 20px;
+}
+
+.content {
+    max-width: 700px;
+}
+
+.ball {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 65px;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #ff91b2;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+
+button {
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #e63958;
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff7ba7;
+    transform: scale(1.05);
+}
+
+/* Sections */
+
+#surprises {
+    display: none;
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+/* Countdown */
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.countdown div {
+    background: #123d86;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.countdown h2 {
+    color: #ff91b2;
+    margin: 0;
+}
+
+/* Photo Gallery */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #ff91b2;
+}
+
+/* Reasons */
+
+.reasons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #123d86;
+    padding: 25px;
+    border-radius: 20px;
+    width: 230px;
+}
+
+.card h3 {
+    color: #ff91b2;
+    margin-bottom: 15px;
+}
+
+/* Love Letter */
+
+.letter {
+    max-width: 650px;
+    margin: auto;
+    background: #35162f;
+    padding: 35px;
+    border-radius: 20px;
+    line-height: 2;
+}
+
+.letter h3 {
+    color: #ff91b2;
+    margin-bottom: 15px;
+}
+
+/* Birthday Cake */
+
+.cake {
+    font-size: 90px;
+    margin: 25px;
+}
+
+/* Final Surprise */
+
+#finalMessage {
+    display: none;
+    max-width: 600px;
+    margin: 30px auto;
+    color: #ff91b2;
+    font-size: 25px;
+    line-height: 1.8;
+}
+
+/* Music */
+
+.music {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #ff91b2;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+
+}
